@@ -36,7 +36,7 @@ export default {
     addPlayer() {
       if (this.newPlayer.name && this.newPlayer.age && this.newPlayer.position) {
         this.$emit('player-added', { ...this.newPlayer });
-        this.newPlayer = { name: '', age: '', position: '' }; // Limpa os campos
+        this.newPlayer = { name: '', age: '', position: '' }; 
       } else {
         alert('Por favor, preencha todos os campos.');
       }
